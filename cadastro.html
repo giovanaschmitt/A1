@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <meta charset="utf-8" />
+   
+        <link rel = "stylesheet" type = "text/css" href = "estilo.css">
+    </head>
+
+    <body> 
+        <nav id="menu-h">
+            <ul>    
+                <li><a href="index.html">HOME</a> </li>       
+                <li><a href="produtos.html">PRODUTOS</a></li>            
+                <li><a href="contato.html">CONTATO</a></li>              
+                <li><a href="login.html">LOGIN</a></li>          
+                <li><a href="cadastro.html">CADASTRE-SE</a></li>
+                
+            </ul>
+        </nav>
+        <div id="formulario">
+            <h1>Cadastre-se</h1>
+
+            <form action="" method="post">
+                <h2>Preencha com seus dados pessoais</h2>
+                <label for="nome">Nome: </label>
+                <input id="nome" name="nome" type="text" required>
+                <br><br>
+                <label for="sobrenome">Sobrenome: </label>
+                <input id="sobrenome" name="sobrenome" type="text" required>
+                <br><br>
+                <label for="cpf">CPF: </label>
+                <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" required>
+                <br><br>
+                <label for="data">Data de nascimento: </label>
+                <input id="data" name="data" type="date" required>
+                <br><br>
+                <label for="telefone">Telefone: </label>
+                <input id="telefone" name="telefone" type="text" placeholder="(00)00000-0000" required>
+                <br><br>
+                <label for="email">E-mail: </label>
+                <input id="email" name="email" type="email" required>
+                <br><br>
+                <label for="senha">Senha</label>
+                <input name="senha" id="senha" type="password" required>
+
+                <div id="radioButton">
+                    <h2>Sexo</h2>
+                    <input id="feminino" type="radio" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <input id="masculino" type="radio" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <br>
+                    <input id="naoInformar" type="radio" name="zero" value="naoInformar">
+                    <label for="naoInformar">Prefiro não informar</label>
+                </div>
+                
+                <div id="listaEstado">
+                    <h2>Selecione seu estado</h2>
+                    <select name="estados" id="estados">
+                        <optgroup label="Brasil">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC"selected>Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>                    
+                    </select>
+                </div>
+                <br>
+    
+                <input type="submit">
+            </form>
+        </div>
+
+
+    </body>
+
+    <footer>
+        <p style="text-align: center;">© 2024 
+        <br>
+        sportss@gmail.com
+        </p>
+    </footer>
+</html>
